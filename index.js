@@ -1,23 +1,18 @@
-import React from "react"
-import ReactDOM from "react-dom/client"
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-// creating 2 h1 elements
-    const heading1 = React.createElement("h1", {
-        id: "title",
-    }, "Heading 1" )
+// create root
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
-    const heading2 = React.createElement("h1", {
-        id: "title",
-    }, "Heading 2" )
+// Create an element using React.createElement
+const heading1 = React.createElement("h1", {}, "hello");
 
-    // creating div to store created h1 elements
-    const div = React.createElement("div", {
-        id: "container"
-    }, [heading1, heading2])
+// JSX create element
+const heading3 = <h1 id="heading">Hello from JSX</h1>;
+
+// Define a functional component
+const HeadingComponent = () => <h1>Hello</h1>;
 
 
-    // create root
-    const root = ReactDOM.createRoot(document.getElementById("root"))
-
-    // insert div into root
-    root.render(div)
+// Render the HeadingComponent into root
+root.render(<HeadingComponent />);

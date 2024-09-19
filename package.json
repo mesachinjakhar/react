@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "react tutorials ",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "dev": " parcel index.html",
+    "prod": " parcel index.html"
   },
   "keywords": [
     "namaste",
