@@ -1,4 +1,5 @@
 import React from "react"
+import ReactDOM from "react-dom/client"
 
 // creating 2 h1 elements
     const heading1 = React.createElement("h1", {
